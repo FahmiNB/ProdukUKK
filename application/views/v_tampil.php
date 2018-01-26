@@ -3,8 +3,10 @@
 	<title>Tampil Admin</title>
 </head>
 <body>
+	<a style="float: left;position: fixed;" href="<?php echo base_url('index.php/welcome/tampil')?>">tampil User</a>
 	<center><h1>Tampil Admin</h1></center>
-	<center><?php echo anchor('welcome/tambah','Tambah Data'); ?></center>
+	<center><?php echo anchor('welcome/tambah_admin','Tambah Data'); ?></center>
+	<center>Data User</center>
 	<table style="margin:20px auto;" border="1">
 		<tr>
 			<th>id</th>
@@ -12,6 +14,7 @@
 			<th>password</th>
 			<th>fullname</th>
 			<th>level</th>
+			<th>aksi</th>
 		</tr>
 		<?php 
 		$no = 1;
@@ -25,7 +28,8 @@
 			<td><?php echo $u->level ?></td>
 			<td>
 			      <?php echo anchor('welcome/edit/'.$u->id,'Edit'); ?>
-                              <?php echo anchor('welcome/hapus/'.$u->id,'Hapus'); ?>
+			      ||
+                  <?php echo anchor('welcome/hapus/'.$u->id,'Hapus'); ?>
 			</td>
 		</tr>
 		<?php } ?>

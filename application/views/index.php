@@ -27,6 +27,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
      <div class="container w3">
 		<form action="#" method="post" class="agile_form">
 		   <h2 class="w3layouts text-center">Offers a quick and easy way to book tickets online</h2>
+		    <div>
+		   <a style="position: relative;left: 34px;" href="<?php echo base_url('index.php/welcome/tambah')?>" class="daftar">daftar</a>
+		   <a style="position: relative;left: 215px;" href="<?php echo base_url('index.php/welcome/')?>" class="login">login</a>
+		   </div>
 		   <ul class="agile_info_select">
 				 <li><input type="radio" name="view" id="excellent"> 
 				 	  <label for="excellent">flight</label>
@@ -42,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</ul>
 			<div class="clear"></div>
 			<input type="text" placeholder="Your Name" name="name" class="name agileits" required=""/>
-			<input placeholder="Date : dd/mm/yyyy" class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/> 
+			<input placeholder="Date" class="date" id="datepicker" type="text"  value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/> 
 			<div class="list_agileits_w3layouts">
 				<div class="section_class_agileits sec-left">
 				  <select>
@@ -101,7 +105,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</form>	
 	</div>	
 	<div class="agileits_w3layouts_copyright text-center">
-			<p>© 2017 Book My Trip. All rights reserved | Design by <a href="//w3layouts.com/">W3layouts</a></p>
+			<p><font color=""> © 2017 Book My Trip. All rights reserved | Design by GASS UKK <a href="//w3layouts.com/"></a></p>
 	</div>
 <!--start-date-piker-->
 		<link rel="stylesheet" href="css/jquery-ui.css" />
