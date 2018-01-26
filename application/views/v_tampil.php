@@ -3,7 +3,10 @@
 	<title>Tampil Admin</title>
 </head>
 <body>
-	<a style="float: left;position: fixed;" href="<?php echo base_url('index.php/welcome/tampil')?>">tampil User</a>
+	<div style="float: left;">
+	<a style="float: left;position: fixed;" href="<?php echo base_url('index.php/welcome/tampil')?>">tampil Data User</a><br>
+	<a style="float: left;position: fixed;" href="<?php echo base_url('index.php/welcome/tampil')?>">tampil Data customer</a>
+	</div>
 	<center><h1>Tampil Admin</h1></center>
 	<center><?php echo anchor('welcome/tambah_admin','Tambah Data'); ?></center>
 	<center>Data User</center>
