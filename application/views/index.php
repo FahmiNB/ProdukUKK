@@ -22,14 +22,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //stylesheet -->
 </head>
 <body class="bg agileinfo">
+<nav style="position: fixed;">
+    <ul>
+       <li><a href="<?php echo base_url('index.php/welcome/index')?>">Home</a></li>
+       <li><a href="#">Booking</a></li>
+       <li><a href="#">About</a></li>
+    </ul>
+</nav>
    <h1 class="agile_head text-center">Book My Trip</h1>
    <p class="text-center">Fusce turpis  nisi aliquam facilisis elit.</p>
      <div class="container w3">
 		<form action="#" method="post" class="agile_form">
 		   <h2 class="w3layouts text-center">Offers a quick and easy way to book tickets online</h2>
 		    <div>
-		   <a style="position: relative;left: 34px;" href="<?php echo base_url('index.php/welcome/tambah')?>" class="daftar">daftar</a>
-		   <a style="position: relative;left: 215px;" href="<?php echo base_url('index.php/welcome/login')?>" class="login">login</a>
+		   <a style="position: relative;left: 10px;" href="<?php echo base_url('index.php/welcome/tambah')?>" class="daftar">daftar</a>
+		   <a style="position: relative;left: 150px;" href="<?php echo base_url('index.php/welcome/login')?>" class="login">login</a>
 		   </div>
 		   <ul class="agile_info_select">
 				 <li><input type="radio" name="view" id="excellent"> 

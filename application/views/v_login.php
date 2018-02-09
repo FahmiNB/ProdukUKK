@@ -22,6 +22,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //stylesheet -->
 </head>
 <body class="bg agileinfo">
+  <nav style="position: fixed;">
+    <ul>
+       <li><a href="<?php echo base_url('index.php/welcome/index')?>">Home</a></li>
+       <li><a href="#">Booking</a></li>
+       <li><a href="#">About</a></li>
+    </ul>
+    </nav>
    <h1 class="agile_head text-center">Book My Trip</h1>
    <p class="text-center">Fusce turpis  nisi aliquam facilisis elit.</p>
      <div class="container w3">
@@ -29,7 +36,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
        <form action="<?php echo base_url(). 'index.php/welcome/aksi_login'; ?>" method="post">
     <table style="margin:20px auto;">
     </h1>
-    <a style="position: relative;" href="<?php echo base_url('index.php/welcome/index')?>" class="login">Home</a>
       <tr>
         <td><font color="white">username :</font></td>
         <td><input type="text" name="username" required/></td>

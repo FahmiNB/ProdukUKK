@@ -348,6 +348,38 @@ input.name {
 	top:1px;
 }
 
+nav {
+ margin:auto;
+ text-align: center;
+ width: 100%;
+ font-family: arial;
+ } 
+ nav ul {
+ background:#37988e;
+ padding: 0 20px;
+ list-style: none;
+ position: relative;
+ display: inline-table;
+ width: 100%;
+ }
+ nav ul li{
+ float:left;
+ }
+
+ nav ul li:hover{
+ background:#d68d9a;
+ }
+
+ nav ul li:hover a{
+ color:#000;
+ }
+
+ nav ul li a{
+ display: block;
+ padding: 5px;
+ color: #fff;
+ text-decoration: none;
+
 .agileits_w3layouts_copyright p {
     color: #fff;
     font-size: 1em;

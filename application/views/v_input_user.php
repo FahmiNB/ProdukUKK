@@ -4,12 +4,18 @@
 	<link href="<?php echo base_url('assets/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body class="bg agileinfo">
+	<nav style="position: fixed;">
+    <ul>
+       <li><a href="<?php echo base_url('index.php/welcome/index')?>">Home</a></li>
+       <li><a href="#">Booking</a></li>
+       <li><a href="#">About</a></li>
+    </ul>
+    </nav>
    <h1 class="agile_head text-center">Daftar</h1>
      <div class="container w3">
 		<form action="<?php echo base_url(). 'index.php/welcome/tambah_aksi_user_index'; ?>" method="post">
 		<table style="margin:20px auto;">
 		</h1>
-		<a style="position: relative;" href="<?php echo base_url('index.php/welcome/index')?>" class="login">Home</a>
 			<tr>
 				<h1><font color="white">Masukan data diri anda</font></h1>
 			</tr>

@@ -22,7 +22,9 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `password`, `fullname`, `level`) VALUES
 (15, 'asdasd', 'asdaasdasd', 'asdasddsd', 'asdad'),
-(24, 'admin', 'admin', 'admin', 'admin');
+(24, 'admin', 'admin', 'admin', 'admin'),
+(25, 'fahmi', 'fahmi', 'fahmi NB', 'bos'),
+(28, 'customer', 'customer', 'customer', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -42,7 +44,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
