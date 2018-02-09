@@ -31,6 +31,9 @@ class Welcome extends CI_Controller {
 	function tambah_admin(){
 		$this->load->view('v_input_admin');
 	}
+	function tambah_customer(){
+		$this->load->view('v_input_customer');
+	}
 	function login(){
 		$this->load->view('v_login');
 	}
@@ -56,6 +59,24 @@ class Welcome extends CI_Controller {
 		redirect('Welcome/index');
 	}
 
+	function tambah_aksi_customer_admin(){
+		$id = $this->input->post('id');
+		$name = $this->input->post('name');
+		$address = $this->input->post('address');
+		$phone = $this->input->post('phone');
+		$gender = $this->input->post('gender');
+ 
+		$data = array(
+			'id' => $id,
+			'name' => $name,
+			'address' => $address,
+			'phone' => $phone,
+			'gender' => $gender,
+			);
+		$this->m_data->input_data($data,'customer');
+		redirect('Welcome/tampil_customer');
+	}
+
 	function tambah_aksi_user(){
 		$id = $this->input->post('id');
 		$username = $this->input->post('username');
@@ -72,6 +93,24 @@ class Welcome extends CI_Controller {
 			);
 		$this->m_data->input_data($data,'user');
 		redirect('Welcome/tampil_user');
+	}
+
+	function tambah_aksi_user_index(){
+		$id = $this->input->post('id');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$fullname = $this->input->post('fullname');
+		$level = $this->input->post('level');
+ 
+		$data = array(
+			'id' => $id,
+			'username' => $username,
+			'password' => $password,
+			'fullname' => $fullname,
+			'level' => $level,
+			);
+		$this->m_data->input_data($data,'user');
+		redirect('Welcome/index');
 	}
 	function edit_user($id){
 		$where = array('id' => $id);
@@ -162,6 +201,7 @@ class Welcome extends CI_Controller {
  
 		}else{
 			echo "Username dan password salah !";
+			echo anchor('welcome/login','back') ;
 		}
 	}
  

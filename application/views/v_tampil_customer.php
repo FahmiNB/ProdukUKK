@@ -8,7 +8,7 @@
 	<a style="float: left;position: fixed;" href="<?php echo base_url('index.php/welcome/tampil_customer')?>">tampil Data customer</a>
 	</div>
 	<center><h1>Tampil Admin</h1></center>
-	<center><?php echo anchor('welcome/tambah_admin','Tambah Data'); ?></center>
+	<center><?php echo anchor('welcome/tambah_customer','Tambah Data'); ?></center>
 	<center>Data Customer</center>
 	<table style="margin:20px auto;" border="1">
 		<tr>

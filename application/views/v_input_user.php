@@ -6,7 +6,7 @@
 <body class="bg agileinfo">
    <h1 class="agile_head text-center">Daftar</h1>
      <div class="container w3">
-		<form action="<?php echo base_url(). 'index.php/welcome/tambah_aksi_customer'; ?>" method="post">
+		<form action="<?php echo base_url(). 'index.php/welcome/tambah_aksi_user_index'; ?>" method="post">
 		<table style="margin:20px auto;">
 		</h1>
 		<a style="position: relative;" href="<?php echo base_url('index.php/welcome/index')?>" class="login">Home</a>
@@ -14,20 +14,20 @@
 				<h1><font color="white">Masukan data diri anda</font></h1>
 			</tr>
 			<tr>
-				<td><font color="white">name :</font></td>
-				<td><input type="text" name="name"></td>
+				<td><font color="white">username :</font></td>
+				<td><input type="text" name="username"></td>
 			</tr>
 			<tr>
-				<td><font color="white">address :</font></td>
-				<td><input type="text" name="address"></td>
+				<td><font color="white">password :</font></td>
+				<td><input type="text" name="password"></td>
 			</tr>
 			<tr>
-				<td><font color="white">phone :</font></td>
-				<td><input type="text" name="phone"></td>
+				<td><font color="white">fullname :</font></td>
+				<td><input type="text" name="fullname"></td>
 			</tr>
 			<tr>
-				<td><font color="white">gender :</font></td>
-				<td><input type="text" name="gender"></td>
+				<td><font color="white">level :</font></td>
+				<td><input type="text" name="level"></td>
 			</tr>
 			<tr>
 				<td></td>

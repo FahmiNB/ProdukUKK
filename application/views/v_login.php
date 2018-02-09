@@ -32,11 +32,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <a style="position: relative;" href="<?php echo base_url('index.php/welcome/index')?>" class="login">Home</a>
       <tr>
         <td><font color="white">username :</font></td>
-        <td><input type="text" name="username"></td>
+        <td><input type="text" name="username" required/></td>
       </tr>
       <tr>
         <td><font color="white">password :</font></td>
-        <td><input type="password" name="password"></td>
+        <td><input type="password" name="password" required/></td>
       </tr>
       </table>
       </div>
