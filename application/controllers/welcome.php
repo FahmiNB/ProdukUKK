@@ -198,8 +198,8 @@ class Welcome extends CI_Controller {
 			$this->session->set_userdata($data_session);
  
 			redirect('welcome/tampil_login');
- 
-		}else{
+ 			}
+ 			else{
 			echo "Username dan password salah !";
 			echo anchor('welcome/login','back') ;
 		}
